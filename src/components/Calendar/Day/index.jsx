@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Week(props) {
+function Day(props) {
     const {} = props
     return (
         <div>
@@ -9,4 +9,5 @@ function Week(props) {
     )
 }
 
-export default Week
+export default Day
+

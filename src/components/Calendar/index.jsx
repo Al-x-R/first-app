@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Calendar.module.scss';
 import * as dateFns from 'date-fns';
+import Month from './Month'
 
 class Calendar extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class Calendar extends Component {
 
     return (
       <article>
+        <Month month={dateFns.format(currentDate, 'MMMM')}/>
         <div className={styles.container}>{dateFns.format(currentDate, 'ww')}</div>
         <button
           onClick={() => {
