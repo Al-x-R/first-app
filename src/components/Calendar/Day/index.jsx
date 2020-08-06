@@ -4,7 +4,7 @@ function Day(props) {
     const {} = props
     return (
         <div>
-            
+            {day}
         </div>
     )
 }
